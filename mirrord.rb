@@ -7,8 +7,8 @@ class Mirrord < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/metalbear-co/mirrord/releases/download/"3.10.1"/mirrord_mac_universal.zip"
-    sha256 """""""b1ef1cf61ad22d058b38ee0acc2a0b8df2dbe0c38175fb4e4e7d4443586bd488"""""""
+    url "https://github.com/metalbear-co/mirrord/releases/download/"3.10.2"/mirrord_mac_universal.zip"
+    sha256 "b1ef1cf61ad22d058b38ee0acc2a0b8df2dbe0c38175fb4e4e7d4443586bd488"
 
     def install
       bin.install "mirrord"
