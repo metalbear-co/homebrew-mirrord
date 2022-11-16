@@ -8,7 +8,7 @@ class Mirrord < Formula
 
   on_macos do
     url "https://github.com/metalbear-co/mirrord/releases/download/3.10.2/mirrord_mac_universal.zip"
-    sha256 "b1ef1cf61ad22d058b38ee0acc2a0b8df2dbe0c38175fb4e4e7d4443586bd488"
+    sha256 "6caacc8a54998b34f2599e35595a15f0fb5eafecfead9791fb59e8a1abf96864"
 
     def install
       bin.install "mirrord"
