@@ -7,8 +7,8 @@ class Mirrord < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/metalbear-co/mirrord/releases/download/3.57.1/mirrord_mac_universal.zip"
-    sha256 "e6fb9720932f09372939214a0c182c31c8f2735b10d1d2dbb5da1ecac83047ef"
+    url "https://github.com/metalbear-co/mirrord/releases/download/3.58.0/mirrord_mac_universal.zip"
+    sha256 "6c9dd6aade0e50226c6e27a0c401b695e72ed6895263c7469a57afe0f3623c9e"
 
     def install
       bin.install "mirrord"
@@ -17,16 +17,16 @@ class Mirrord < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalbear-co/mirrord/releases/download/3.57.1/mirrord_linux_aarch64.zip"
-      sha256 "bbebfcad42b152e6c14a5183484961e56b12579bd5af71c02e696a0133ed3459"
+      url "https://github.com/metalbear-co/mirrord/releases/download/3.58.0/mirrord_linux_aarch64.zip"
+      sha256 "94460f0f6e8608b76a5596420e5eb21af7add89d5420fc14e65b446a894af91f"
 
       def install
         bin.install "mirrord"
       end
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalbear-co/mirrord/releases/download/3.57.1/mirrord_linux_x86_64.zip"
-      sha256 "57b2a78486dcae718714efaae71a417b83b079a466909e5edd08425507193d85"
+      url "https://github.com/metalbear-co/mirrord/releases/download/3.58.0/mirrord_linux_x86_64.zip"
+      sha256 "d5121b66418f432d250fb954168554a60b1f75f32513798143aa5806ee1b513b"
 
       def install
         bin.install "mirrord"
