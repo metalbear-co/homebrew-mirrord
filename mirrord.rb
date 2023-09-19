@@ -24,7 +24,19 @@ class Mirrord < Formula
 
   def install
     bin.install "mirrord"
-    generate_completions_from_executable(bin/"mirrord", "completions")
+  end
+
+  def caveats
+    <<~EOS
+      mirrord has been installed but you'll need to manually generate and source
+      the completions for your shell like:
+
+        source <(mirrord completions bash)
+
+      And equivalent for other shells. Check the documentation for more info:
+
+        mirrord completions --help
+    EOS
   end
 
   test do
