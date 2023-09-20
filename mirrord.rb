@@ -28,14 +28,13 @@ class Mirrord < Formula
 
   def caveats
     <<~EOS
-      mirrord has been installed but you'll need to manually generate and source
-      the completions for your shell like:
+      mirrord has been installed, but if you'd like shell completions you'll
+      need to manually generate the completions for your shell like
 
-        source <(mirrord completions bash)
+        mirrord completions <bash|zsh|fish>
 
-      And equivalent for other shells. Check the documentation for more info:
-
-        mirrord completions --help
+      To ensure it's always available you can add it to Homebrew's default locations.
+      Follow their instructions here: https://docs.brew.sh/Shell-Completion
     EOS
   end
 
