@@ -8,17 +8,17 @@ class Mirrord < Formula
 
   on_macos do
     url "https://github.com/metalbear-co/mirrord/releases/download/3.116.0/mirrord_mac_universal.zip"
-    sha256 ""
+    sha256 "edeabb618992f7b41ea7c769e4a7f0f0833332cc772ae3d21422bbf1b428d8da"
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/metalbear-co/mirrord/releases/download/3.116.0/mirrord_linux_aarch64.zip"
-      sha256 ""
+      sha256 "89a956e83311ded8bb73003b907451edd1a6c555521c61c112d3b595ba097661"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/metalbear-co/mirrord/releases/download/3.116.0/mirrord_linux_x86_64.zip"
-      sha256 ""
+      sha256 "aba32642306e8a4fb6e167626b4678ac8aa4c7ac8b6061b5b071ffa05fe92446"
     end
   end
 
