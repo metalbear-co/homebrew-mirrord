@@ -5,7 +5,7 @@ class Mirrord < Formula
   desc "Connect your local process and your cloud environment"
   homepage "https://mirrord.dev"
   license "MIT"
-  version 3.157.0
+  version "3.157.0"
   version_scheme 1
 
   on_macos do
