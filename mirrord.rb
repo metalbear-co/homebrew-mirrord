@@ -5,22 +5,22 @@ class Mirrord < Formula
   desc "Connect your local process and your cloud environment"
   homepage "https://mirrord.dev"
   license "MIT"
-  version "3.286.0"
+  version "3.287.0"
   version_scheme 1
 
   on_macos do
-    url "https://github.com/metalbear-co/mirrord/releases/download/3.286.0/mirrord_mac_universal.zip"
-    sha256 "ab6b8ee790d614473d84997ad01d88a1792bbb132cda1c75e524786da724f883"
+    url "https://github.com/metalbear-co/mirrord/releases/download/3.287.0/mirrord_mac_universal.zip"
+    sha256 "055334f336f1b6e44a98ee0baaafcdbafd643279bb536c4902b800701420c249"
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalbear-co/mirrord/releases/download/3.286.0/mirrord_linux_aarch64.zip"
-      sha256 "e75da6d1b36de9b1bb14f6e481002e611dcdac0cbf5a1dfc00130e0f58cc4479"
+      url "https://github.com/metalbear-co/mirrord/releases/download/3.287.0/mirrord_linux_aarch64.zip"
+      sha256 "ebd9fe646514336b100b3c497ee24320d14ff7d2b47d7c6e53042156d7a85c64"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalbear-co/mirrord/releases/download/3.286.0/mirrord_linux_x86_64.zip"
-      sha256 "a1378f4f1427c1c340ffd3385aaa8cd2936bd6df3f6703fb30e689a7dc2134b9"
+      url "https://github.com/metalbear-co/mirrord/releases/download/3.287.0/mirrord_linux_x86_64.zip"
+      sha256 "e4db3ef196f29b42618df258b0c2254f2ce02a1abd8af68985a42fe6f670e4f5"
     end
   end
 
